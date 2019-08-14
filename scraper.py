@@ -325,7 +325,7 @@ def get_frame(csv_fname):
 
     os.chdir(csv_dir)
 
-    frame = pd.read_csv(csv_fname)
+    frame = pd.read_csv(csv_fname, encoding="ISO-8859-1")
     frame.drop_duplicates(keep="first", inplace=True)
 
     os.chdir(BASE_DIR)

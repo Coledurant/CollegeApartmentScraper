@@ -108,6 +108,7 @@ class College(object):
         Finds lat,lon pair from address by using geopy Nominatim
         '''
 
+
         try:
             location = geolocator.geocode(self.address, timeout=base.DEFAULT_SENTINEL)
             lat = location.latitude
@@ -180,6 +181,10 @@ class College(object):
 
 
         os.chdir(excel_dir)
+        state_dir = os.path.join(excel_dir, self.state)
+        if not os.path.exists(state_dir):
+            os.mkdir(state_dir)
+        os.chdir(state_dir)
 
         writer = pd.ExcelWriter(fname.replace('.csv', '.xlsx'))
         app_class_frame.to_excel(writer, 'Apartments')
@@ -253,6 +258,7 @@ class Apartment(object):
         the self.lat and self.lon pair
         '''
 
+
         try:
             location = geolocator.geocode(self.address, timeout=base.DEFAULT_SENTINEL)
             lat = location.latitude
@@ -269,6 +275,7 @@ class Apartment(object):
         finally:
             time.sleep(1)
 
+
     def get_dist_from_college(self):
 
         '''
@@ -278,7 +285,7 @@ class Apartment(object):
         Returns:
             miles_away (float): The distance in miles between the college and apartment complex
         '''
-        if self.lat == None or self.lon == None:
+        if self.lat is None or self.lon is None:
             self.find_lat_lon()
         else:pass
 
@@ -290,13 +297,13 @@ class Apartment(object):
             self_lat_lon_tup = (self.lat, self.lon)
             miles_away = round(distance.distance(college_lat_lon_tup, self_lat_lon_tup).miles, 2)
 
+            if miles_away >= 20:
+
+                miles_away = None
+
         except Exception as e:
-            logger.error('College Lat, Lon values are incorrect... try calling find_lat_lon() on {0} College Class'.format(self.college.college_name))
+            logger.error('Lat, Lon: {0}, {1} are incorrect... try calling find_lat_lon() on {2} College Class'.format(self.college.lat, self.college.lon, self.college.college_name))
             print(e)
-            miles_away = None
-
-        if miles_away >= 20:
-
             miles_away = None
 
         print(miles_away)
@@ -368,25 +375,6 @@ def get_dist_from_college_outside_funct(college_lat, college_lon, apartment_lat,
 
 if __name__ == '__main__':
 
+    penn = College('University of Pennsylvania', 24806, 'Philadelphia', 'pa', '3401 Walnut St, Philadelphia, PA 19104', 39.952935, -75.194963)
 
-
-    # OHIO
-
-    ohio_state_college = College(college_name = 'The Ohio State University', enrollment = 68100, college_location = 'Columbus', state = 'oh', address = '91-59 W Long St Columbus, OH 43215', lat=40.006641, lon=-83.030569)
-    cincinnati_college = College(college_name = 'University of Cincinnati', enrollment = 45949, college_location = 'Cincinnati', state = 'oh', address = '2600 Clifton Ave Cincinnati, OH 45221', lat=39.131005, lon=-84.517521)
-    kent_state_college = College(college_name = 'Kent State University', enrollment = 29477, college_location = 'Kent', state = 'oh', address = '800 E Summit St Kent, OH 44240', lat=None, lon=None)
-    ohio_college = College(college_name = 'Ohio University', enrollment = 29217, college_location = 'Athens', state = 'oh', address = '80 E State St Athens, OH 45701', lat=None, lon=None)
-    akron_college = College(college_name = 'University of Akron', enrollment = 23962, college_location = 'Akron', state = 'oh', address = '302 E Buchtel Ave Akron, OH 44325', lat=None, lon=None)
-    toledo_college = College(college_name = 'Toledo University', enrollment = 20626, college_location = 'Toledo', state = 'oh', address = '1510 N Westwood Ave, Toledo, OH 43606', lat=None, lon=None)
-    miami_ohio_college = College(college_name = 'Miami University', enrollment = 18620, college_location = 'Oxford', state = 'oh', address = '501 E High St, Oxford, OH 45056', lat=None, lon=None)
-    cleveland_state_college = College(college_name = 'Cleveland State University', enrollment = 17730, college_location = 'Cleveland', state = 'oh', address = '2121 Euclid Ave, Cleveland, OH 44115', lat=None, lon=None)
-    wright_state_college = College(college_name = 'Wright State University', enrollment = 16842, college_location = 'Dayton', state = 'oh', address = '3640 Colonel Glenn Hwy, Dayton, OH 45435', lat=None, lon=None)
-    bowling_green_college = College(college_name = 'Bowling Green State University', enrollment = 16554, college_location = 'Bowling Green', state = 'oh', address = '1530 E Wooster St, Bowling Green, OH 43402', lat=None, lon=None)
-    dayton_college = College(college_name = 'University of Dayton', enrollment = 11074, college_location = 'Dayton', state = 'oh', address='2006 Founders Ln, Dayton, OH 45409', lat=None, lon=None)
-
-
-
-    ohio_college_list = [ohio_state_college, cincinnati_college, dayton_college, kent_state_college, ohio_college, akron_college, toledo_college, miami_ohio_college, wright_state_college, bowling_green_college, dayton_college]
-
-
-    ohio_state_college.find_apartments()
+    penn.find_apartments()

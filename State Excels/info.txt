@@ -1,0 +1,132 @@
+OHIO
+
+  The Ohio State University
+    - The Ohio State University
+    - 66444
+    - Columbus
+    - oh
+    - 281 W Lane Ave, Columbus, OH 43210
+    - 40.006087
+    - -83.016529
+
+
+  University of Cincinnati
+    - University of Cincinnati
+    - 45949
+    - Cincinnati
+    - oh
+    - 2600 Clifton Ave Cincinnati, OH 45221
+    - 39.131005
+    - -84.517521
+
+
+  University of Dayton
+    - University of Dayton
+    - 11074
+    - Dayton
+    - oh
+    - 300 College Park, Dayton, OH 45469
+    - 39.739254
+    - -84.179954
+
+
+  Kent State University
+    - Kent State University
+    - 29477
+    - Kent
+    - oh
+    - 800 E Summit St, Kent, OH 44240
+    - 41.145536
+    - -81.339297
+
+
+  Ohio University
+    - Ohio University
+    - 29217
+    - Athens
+    - oh
+    - 80 E State St Athens, OH 45701
+    - 39.331965
+    - -82.098607
+
+
+  University of Akron
+    - University of Akron
+    - 23962
+    - Akron
+    - oh
+    - 302 E Buchtel Ave, Akron, OH 44325
+    - 41.076637
+    - -81.511337
+
+
+  Toledo University
+    - Toledo University
+    - 20626
+    - Toledo
+    - oh
+    - 2801 Bancroft St, Toledo, OH 43606
+    - 41.658003
+    - -83.614055
+
+
+  Miami University
+    - Miami University
+    - 18620
+    - Oxford
+    - oh
+    - 501 E High St, Oxford, OH 45056
+    - 39.510426
+    - -84.730713
+
+
+  Cleveland State University
+    - Cleveland State University
+    - 17730
+    - Cleveland
+    - oh
+    - 2121 Euclid Ave, Cleveland, OH 44115
+    - 41.502469
+    - -81.674718
+
+
+PENNSYLVANIA
+
+  University of Pennsylvania
+    - University of Pennsylvania
+    - 24806
+    - Philadelphia
+    - pa
+    - 3401 Walnut St, Philadelphia, PA 19104
+    - 39.952935
+    - -75.194963
+
+  Temple University
+    - Temple University
+    - 39581
+    - Philadelphia
+    - pa
+    - 1100 W Montgomery Ave Ste A, Philadelphia, PA 19122
+    - 39.981059
+    - -75.155306
+
+  Drexel University
+    - Drexel University
+    - 25595
+    - Philadelphia
+    - pa
+    - 3141 Chestnut St, Philadelphia, PA 19104
+    - 39.956571
+    - -75.189951
+
+
+NEW JERSEY
+
+  Rutgers University
+    - Rutgers University
+    - 67556
+    - New Brunswick
+    - nj
+    - 215 N 3rd St, Camden, NJ 08102
+    - 39.948051
+    - -75.123899
