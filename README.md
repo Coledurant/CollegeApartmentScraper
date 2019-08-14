@@ -8,6 +8,6 @@ Features section of their webpage. This will be changed soon.
 
 ## Usage
 
-'''
+'''python
 python CLIFinder.py
 '''
