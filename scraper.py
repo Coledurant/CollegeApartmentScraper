@@ -330,21 +330,17 @@ def get_frame(csv_fname):
 
     os.chdir(BASE_DIR)
 
-    # Getting Lats and Lons
+    # Setting lats and lons to none to save time and sort out the ones that will be deleted anyways later on (Wi-Fi)
 
     for inum, row in frame.iterrows():
 
-        geolocator = Nominatim()
         try:
-            location = geolocator.geocode(row['Address'], timeout=None)
-            lat = location.latitude
-            lon = location.longitude
-            frame.set_value(inum, 'Lat', lat)
-            frame.set_value(inum, 'Lon', lon)
+            frame.set_value(inum, 'Lat', None)
+            frame.set_value(inum, 'Lon', None)
         except Exception as e:
             print(e)
-    
-    frame.dropna(axis=0, inplace=True)
+
+    frame = frame[frame['Wi-Fi'] == True]
     frame.sort_values('Units', axis=0, ascending=False, inplace=True)
     frame.reset_index(drop=True, inplace=True)
 
