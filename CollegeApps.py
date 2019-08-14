@@ -11,7 +11,19 @@ import os
 
 import requests
 
-PLACES_API_KEY = 'AIzaSyAyM0vORlGjd4e2lD-QWR0wBHEhCy28vus'
+try:
+    import configparser
+except ImportError:
+    import ConfigParser as configparser
+
+
+
+
+conf = configparser.ConfigParser()
+config_file = os.path.join(os.path.dirname(__file__), "config.ini")
+conf.read(config_file)
+
+PLACES_API_KEY = conf.get('google_places', 'PLACES_API_KEY')
 
 logger = logging.getLogger(__name__)
 
@@ -107,6 +119,7 @@ class College(object):
         except Exception as e:
 
             print(e)
+            print('College lat lon error')
 
         finally:
             time.sleep(1)
@@ -140,28 +153,30 @@ class College(object):
 
         for inum, row in apartment_frame.iterrows():
 
-            app_class = Apartment(apartment_name = row['Option Name'], college = self, num_units = row['Units'], address = row['Address'], contact = row['Contact'], dist_from_college = None, lat = row['Lat'], lon = row['Lon'])
+            app_class = Apartment(apartment_name = row['Option Name'], college = self, num_units = row['Units'], address = row['Address'], contact = row['Contact'], dist_from_college = None, lat = None, lon = None)
+
+            app_class.find_lat_lon()
 
             app_class.get_dist_from_college()
 
             app_classes.append(app_class)
 
-        # app_class_frame = pd.DataFrame({'Name':[app.apartment_name for app in app_classes],
-        #                                 'Units':[app.num_units for app in app_classes],
-        #                                 'Distance From {0}'.format(self.college_name):[app.dist_from_college for app in app_classes],
-        #                                 'Address':[app.address for app in app_classes],
-        #                                 'Contact':[app.contact for app in app_classes],
-        #                                 'Lat':[app.lat for app in app_classes],
-        #                                 'Lon':[app.lon for app in app_classes],})
+
+        print(len(app_classes))
 
         app_class_frame = pd.DataFrame(columns = ['Name', 'Units', 'Distance From {0}'.format(self.college_name), 'Address', 'Contact', 'Lat', 'Lon'])
 
         for app_class in app_classes:
 
-            new_row = pd.DataFrame(columns = ['Name', 'Units', 'Distance From {0}'.format(self.college_name), 'Address', 'Contact', 'Lat', 'Lon'])
-            new_row.iloc[0] = [app_class.apartment_name, app_class.num_units, app_class.dist_from_college, app_class.addess, app_class.contact, app_class.lat, app_class.lon]
+            row_data = {'Name':app_class.apartment_name, 'Units':app_class.num_units, 'Distance From {0}'.format(self.college_name):app_class.dist_from_college,
+                        'Address':app_class.address, 'Contact':app_class.contact, 'Lat':app_class.lat, 'Lon':app_class.lon}
+
+            new_row = pd.DataFrame(row_data, columns = list(row_data.keys()), index = [app_class.apartment_name])
 
             app_class_frame = pd.concat([app_class_frame, new_row], axis=0, ignore_index=True)
+
+
+
 
 
         os.chdir(excel_dir)
@@ -249,6 +264,7 @@ class Apartment(object):
         except Exception as e:
 
             print(e)
+            print('Apartment lat lon error')
 
         finally:
             time.sleep(1)
@@ -262,10 +278,15 @@ class Apartment(object):
         Returns:
             miles_away (float): The distance in miles between the college and apartment complex
         '''
+        if self.lat == None or self.lon == None:
+            self.find_lat_lon()
+        else:pass
+
+
         try:
             college_lat_lon_tup = (self.college.lat, self.college.lon)
             if self.college.lat == None or self.college.lon == None:
-                raise ValueError
+                raise ValueError('Apartment lat or lon is None')
             self_lat_lon_tup = (self.lat, self.lon)
             miles_away = round(distance.distance(college_lat_lon_tup, self_lat_lon_tup).miles, 2)
 
@@ -274,11 +295,17 @@ class Apartment(object):
             print(e)
             miles_away = None
 
+        if miles_away >= 20:
+
+            miles_away = None
+
         print(miles_away)
 
         self.dist_from_college = miles_away
 
         return miles_away
+
+
 
 
 
@@ -334,6 +361,8 @@ def get_dist_from_college_outside_funct(college_lat, college_lon, apartment_lat,
         print(e)
         miles_away = None
 
+    print("{0}, {1} is {2} miles away from {3}, {4}".format(self.lat, self.lon, miles_away, self.college.lat, self.college.lon))
+
     return miles_away
 
 
@@ -341,8 +370,10 @@ if __name__ == '__main__':
 
 
 
+    # OHIO
+
     ohio_state_college = College(college_name = 'The Ohio State University', enrollment = 68100, college_location = 'Columbus', state = 'oh', address = '91-59 W Long St Columbus, OH 43215', lat=40.006641, lon=-83.030569)
-    cincinnati_college = College(college_name = 'University of Cincinnati', enrollment = 45949, college_location = 'Cincinnati', state = 'oh', address = '2600 Clifton Ave Cincinnati, OH 45221', lat=None, lon=None)
+    cincinnati_college = College(college_name = 'University of Cincinnati', enrollment = 45949, college_location = 'Cincinnati', state = 'oh', address = '2600 Clifton Ave Cincinnati, OH 45221', lat=39.131005, lon=-84.517521)
     kent_state_college = College(college_name = 'Kent State University', enrollment = 29477, college_location = 'Kent', state = 'oh', address = '800 E Summit St Kent, OH 44240', lat=None, lon=None)
     ohio_college = College(college_name = 'Ohio University', enrollment = 29217, college_location = 'Athens', state = 'oh', address = '80 E State St Athens, OH 45701', lat=None, lon=None)
     akron_college = College(college_name = 'University of Akron', enrollment = 23962, college_location = 'Akron', state = 'oh', address = '302 E Buchtel Ave Akron, OH 44325', lat=None, lon=None)
