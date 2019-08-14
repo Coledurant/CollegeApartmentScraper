@@ -20,7 +20,7 @@ except ImportError:
 
 
 conf = configparser.ConfigParser()
-config_file = os.path.join(os.path.dirname(__file__), "config.ini")
+config_file = os.path.join(os.path.dirname(__file__), "conf/config.ini")
 conf.read(config_file)
 
 PLACES_API_KEY = conf.get('google_places', 'PLACES_API_KEY')

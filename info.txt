@@ -119,6 +119,24 @@ PENNSYLVANIA
     - 39.956571
     - -75.189951
 
+  University of Pittsburgh
+    - University of Pittsburgh
+    - 34934
+    - Pittsburgh
+    - pa
+    - 4200 Fifth Ave, Pittsburgh, PA 15260
+    - 40.444262
+    - -79.960841
+
+  Carnegie Mellon University
+    - Carnegie Mellon University
+    - 13961
+    - Pittsburgh
+    - pa
+    - 5000 Forbes Ave, Pittsburgh, PA 15213
+    - 40.442766
+    - -79.942989
+
 
 NEW JERSEY
 
@@ -130,3 +148,13 @@ NEW JERSEY
     - 215 N 3rd St, Camden, NJ 08102
     - 39.948051
     - -75.123899
+
+
+
+
+
+
+
+schools not added into a state excel:
+
+  - None
