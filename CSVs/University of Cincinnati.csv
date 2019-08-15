@@ -1,6 +1,6 @@
 Option Name,Developer,Contact,Address,Wi-Fi,Year Built,Units,URL
 Stetson Square,Village Green,844-857-6892,"3010 Eden Ave, Cincinnati, OH 45219",False,2005,205,https://www.apartments.com/stetson-square-cincinnati-oh/4mnr3mj/
-Poste,Milhaus,513-253-0979,"755 E McMillan St, Cincinnati, OH 45206",False,2020,124,https://www.apartments.com/poste-cincinnati-oh/58x7sqn/
+Poste,Milhaus,513-253-0979,"739 E McMillan St, Cincinnati, OH 45206",False,2020,124,https://www.apartments.com/poste-cincinnati-oh/58x7sqn/
 Windsor Flats,"Core Redevelopment, LLC",844-595-6454,"937 Windsor St, Cincinnati, OH 45206",False,2017,41,https://www.apartments.com/windsor-flats-cincinnati-oh/brvf3qb/
 Encore,North American Properties,513-275-7145,"716 Sycamore St, Cincinnati, OH 45202",False,2017,133,https://www.apartments.com/encore-cincinnati-oh/8eyptg0/
 Sycamore Place,North American Properties,513-904-6073,"634 Sycamore St, Cincinnati, OH 45202",False,2002,105,https://www.apartments.com/sycamore-place-cincinnati-oh/vtnrm0d/
@@ -83,24 +83,22 @@ Residence at Cedar Grove,"DMG Rentals, Inc.",844-896-9604,"1718 Cedar Ave, Cinci
 2616 Vine St Unit #3,,740-914-2493,"2616 Vine St, Cincinnati, OH 45219",False,1950,30,https://www.apartments.com/2616-vine-st-cincinnati-oh-unit-3/c2lnj7f/
 2616 Vine St Unit #4,,614-626-7616,"2616 Vine St, Cincinnati, OH 45219",False,1950,30,https://www.apartments.com/2616-vine-st-cincinnati-oh-unit-4/djw8bcj/
 2433 Vine St Unit #2,,330-349-6439,"2433 Vine St, Cincinnati, OH 45219",False,1950,30,https://www.apartments.com/2433-vine-st-cincinnati-oh-unit-2/k9ttq99/
-2427 Vine St,,859-287-1573,"2427 Vine St, Cincinnati, OH 45219",False,1950,30,https://www.apartments.com/2427-vine-st-cincinnati-oh/44bl9sk/
 2441 Ohio Ave Unit 3,,844-208-4595,"2441 Ohio Ave, Cincinnati, OH 45219",False,1950,30,https://www.apartments.com/2441-ohio-ave-cincinnati-oh-unit-3/wwrghdh/
-396 Probasco St Unit 1,,844-307-0612,"396 Probasco St, Cincinnati, OH 45220",True,1950,30,https://www.apartments.com/396-probasco-st-cincinnati-oh-unit-1/8k05e32/
 396 Probasco St,,844-669-4811,"396 Probasco St, Cincinnati, OH 45220",True,1950,30,https://www.apartments.com/396-probasco-st-cincinnati-oh/fec8qrt/
+396 Probasco St Unit 1,,844-307-0612,"396 Probasco St, Cincinnati, OH 45220",True,1950,30,https://www.apartments.com/396-probasco-st-cincinnati-oh-unit-1/8k05e32/
 107 Glenmary Ave Unit 2,,513-399-5469,"107 Glenmary Ave, Cincinnati, OH 45220",False,1950,30,https://www.apartments.com/107-glenmary-ave-cincinnati-oh-unit-2/gj5vytz/
 141 Warner St,,513-306-4648,"141 Warner St, Cincinnati, OH 45219",False,1950,30,https://www.apartments.com/141-warner-st-cincinnati-oh/25rj8xc/
 229 Loraine Ave Unit 1,,513-399-5568,"229 Loraine Ave, Cincinnati, OH 45220",False,1950,30,https://www.apartments.com/229-loraine-ave-cincinnati-oh-unit-1/g0sqyly/
-255 Mcgregor Ave Unit 14,,844-306-3438,"255 Mcgregor Ave, Cincinnati, OH 45219",False,1950,30,https://www.apartments.com/255-mcgregor-ave-cincinnati-oh-unit-14/lzhr6yg/
 255 Mcgregor Ave Unit 4,,844-306-3901,"255 Mcgregor Ave, Cincinnati, OH 45219",False,1950,30,https://www.apartments.com/255-mcgregor-ave-cincinnati-oh-unit-4/631qbqt/
-2911 Maisel Dr,,513-234-4982,"2911 Maisel Dr, Cincinnati, OH 45220",False,1950,30,https://www.apartments.com/2911-maisel-dr-cincinnati-oh/5fknd9p/
+255 Mcgregor Ave Unit 14,,844-306-3438,"255 Mcgregor Ave, Cincinnati, OH 45219",False,1950,30,https://www.apartments.com/255-mcgregor-ave-cincinnati-oh-unit-14/lzhr6yg/
 584 Lowell Ave,,,"584 Lowell Ave, Cincinnati, OH 45220",False,1950,30,https://www.apartments.com/584-lowell-ave-cincinnati-oh/hclj450/
-208 Hastings St,,513-268-3427,"208 Hastings St, Cincinnati, OH 45219",False,1950,30,https://www.apartments.com/208-hastings-st-cincinnati-oh/ttjez18/
 572 Howell Ave Unit 3,,513-394-6981,"572 Howell Ave, Cincinnati, OH 45220",False,1950,30,https://www.apartments.com/572-howell-ave-cincinnati-oh-unit-3/81666y1/
 2886 W McMicken Ave Unit 4,,513-301-2757,"2886 W McMicken Ave, Cincinnati, OH 45225",False,1950,30,https://www.apartments.com/2886-w-mcmicken-ave-cincinnati-oh-unit-4/kz0yn49/
-2421 Fairview Ave,,513-275-5343,"2421 Fairview Ave, Cincinnati, OH 45219",False,1950,30,https://www.apartments.com/2421-fairview-ave-cincinnati-oh/5d981zm/
 3 Foxhall Ct,,216-273-1391,"3 Foxhall Ct, Cincinnati, OH 45219",False,1950,30,https://www.apartments.com/3-foxhall-ct-cincinnati-oh/b7kmsd8/
-,,,,,,,
-,,,,,,,
+465 Warner St,,844-314-6854,"465 Warner St, Cincinnati, OH 45219",False,1950,30,https://www.apartments.com/465-warner-st-cincinnati-oh/gynk1bz/
+3366 Morrison Ave Unit none,,,"3366 Morrison Ave, Cincinnati, OH 45220",False,1950,30,https://www.apartments.com/3366-morrison-ave-cincinnati-oh-unit-none/j6ftyx5/
+590 Ludlow Ave Unit 1,,937-247-4481,"590 Ludlow Ave, Cincinnati, OH 45220",False,1950,30,https://www.apartments.com/590-ludlow-ave-cincinnati-oh-unit-1/8qbrh00/
+850 Lincoln Ave Unit 2,,513-904-6079,"850 Lincoln Ave, Cincinnati, OH 45206",False,1950,30,https://www.apartments.com/850-lincoln-ave-cincinnati-oh-unit-2/2lpk2wc/
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -114,7 +112,7 @@ Residence at Cedar Grove,"DMG Rentals, Inc.",844-896-9604,"1718 Cedar Ave, Cinci
 ,,,,,,,
 ,,,,,,,
 1610 Queen City Ave Unit B,,513-286-1789,"1610 Queen City Ave, Cincinnati, OH 45214",False,,,https://www.apartments.com/1610-queen-city-ave-cincinnati-oh-unit-b/xpnsq1n/
-3642 Clarion Ave,,513-268-6334,"3642 Clarion Ave, Cincinnati, OH 45207",False,,,https://www.apartments.com/3642-clarion-ave-cincinnati-oh/2zn8nn8/
+1815 William Howard Taft Rd Unit 410,,513-426-6576,"1815 William Howard Taft Rd, Cincinnati, OH 45206",False,,,https://www.apartments.com/1815-william-howard-taft-rd-cincinnati-oh-unit-410/3ftc24d/
 2308 Gladstone Ave Unit 1,,513-301-1555,"2308 Gladstone Ave, Cincinnati, OH 45202",False,,,https://www.apartments.com/2308-gladstone-ave-cincinnati-oh-unit-1/l7bc3df/
 325 W 5th St Unit 5,,513-833-9074,"325 W 5th St, Cincinnati, OH 45202",False,,,https://www.apartments.com/325-w-5th-st-cincinnati-oh-unit-5/lc3s1fg/
 1928 Fairmount Ave Unit 14,,216-273-1298,"1928 Fairmount Ave, Cincinnati, OH 45214",False,,,https://www.apartments.com/1928-fairmount-ave-cincinnati-oh-unit-14/1lx84b5/
@@ -124,6 +122,12 @@ Residence at Cedar Grove,"DMG Rentals, Inc.",844-896-9604,"1718 Cedar Ave, Cinci
 632 Nelson Pl Unit 2,,513-268-3291,"632 Nelson Pl, Newport, KY 41071",False,,,https://www.apartments.com/632-nelson-pl-newport-ky-unit-2/xcn7wnn/
 803 E 6th St Unit 302,,909-281-0961,"803 E 6th St, Newport, KY 41071",False,,,https://www.apartments.com/803-e-6th-st-newport-ky-unit-302/0kgvpb3/
 3927 Hazel Ave Unit 2,,513-257-0827,"3927 Hazel Ave, Cincinnati, OH 45212",False,,,https://www.apartments.com/3927-hazel-ave-cincinnati-oh-unit-2/1y2b8d5/
+4341 Montgomery Rd Unit 15,,,"4341 Montgomery Rd, Cincinnati, OH 45212",True,,,https://www.apartments.com/4341-montgomery-rd-cincinnati-oh-unit-15/nllpvkp/
+4341 Montgomery Rd Unit 1,,,"4341 Montgomery Rd, Cincinnati, OH 45212",False,,,https://www.apartments.com/4341-montgomery-rd-cincinnati-oh-unit-1/w6mse8j/
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -153,18 +157,18 @@ Residence at Cedar Grove,"DMG Rentals, Inc.",844-896-9604,"1718 Cedar Ave, Cinci
 335 W 5th St Unit 102,,,"335 W 5th St, Cincinnati, OH 45202",False,,,https://www.apartments.com/335-w-5th-st-cincinnati-oh-unit-102/65c1phr/
 2702 Eden Ave Unit 1,,,"2702 Eden Ave, Cincinnati, OH 45219",False,,,https://www.apartments.com/2702-eden-ave-cincinnati-oh-unit-1/3nf0ybg/
 2702 Eden Ave,,,"2702 Eden Ave, Cincinnati, OH 45219",False,,,https://www.apartments.com/2702-eden-ave-cincinnati-oh/nbrlctq/
-2815 Highland Ave,,,"2815 Highland Ave, Cincinnati, OH 45219",False,,,https://www.apartments.com/2815-highland-ave-cincinnati-oh/h4g5er0/
 56 W McMillan St,,,"56 W McMillan St, Cincinnati, OH 45219",False,,,https://www.apartments.com/56-w-mcmillan-st-cincinnati-oh/gc296xz/
 2805 Stratford Ave,,,"2805 Stratford Ave, Cincinnati, OH 45220",False,,,https://www.apartments.com/2805-stratford-ave-cincinnati-oh/znt2stw/
+2640 Burnet Ave,,,"2640 Burnet Ave, Cincinnati, OH 45219",False,,,https://www.apartments.com/2640-burnet-ave-cincinnati-oh/3z5j9ce/
 2805 Digby Ave,,,"2805 Digby Ave, Cincinnati, OH 45220",False,,,https://www.apartments.com/2805-digby-ave-cincinnati-oh/xt50yhn/
 Marburg - 260 Ludlow,,,"260 Ludlow Ave, Cincinnati, OH 45220",False,,,https://www.apartments.com/marburg-260-ludlow-cincinnati-oh/f40mpfs/
 384 Probasco St,,,"384 Probasco St, Cincinnati, OH 45220",False,,,https://www.apartments.com/384-probasco-st-cincinnati-oh/pscj5st/
-2381 Wheeler St,,,"2381 Wheeler St, Cincinnati, OH 45219",False,,,https://www.apartments.com/2381-wheeler-st-cincinnati-oh/k16g2yb/
 2381 Wheeler St,,,"2381 Wheeler St, Cincinnati, OH 45219",False,,,https://www.apartments.com/2381-wheeler-st-cincinnati-oh/h96ekz2/
+2381 Wheeler St,,,"2381 Wheeler St, Cincinnati, OH 45219",False,,,https://www.apartments.com/2381-wheeler-st-cincinnati-oh/k16g2yb/
 521-523 Oak St,,,"521-523 Oak St, Cincinnati, OH 45219",False,,,https://www.apartments.com/521-523-oak-st-cincinnati-oh/n1hs9gq/
 2700 University Ct,,,"2700 University Ct, Cincinnati, OH 45219",False,,,https://www.apartments.com/2700-university-ct-cincinnati-oh/g8w1chx/
-2344 W Clifton Ave,,,"2344 W Clifton Ave, Cincinnati, OH 45219",False,,,https://www.apartments.com/2344-w-clifton-ave-cincinnati-oh/eey6wrn/
 2344 W Clifton Ave,,,"2344 W Clifton Ave, Cincinnati, OH 45219",False,,,https://www.apartments.com/2344-w-clifton-ave-cincinnati-oh/xs5n6tm/
+2344 W Clifton Ave,,,"2344 W Clifton Ave, Cincinnati, OH 45219",False,,,https://www.apartments.com/2344-w-clifton-ave-cincinnati-oh/eey6wrn/
 2301 Auburn Avenue,,,"2301 Auburn Ave, Cincinnati, OH 45219",False,,60,https://www.apartments.com/2301-auburn-avenue-cincinnati-oh/r3n2cj3/
 305 Macmillan,,,"305 Macmillan, Cincinnati, OH 45220",False,,60,https://www.apartments.com/305-macmillan-cincinnati-oh/ybt2lvs/
 2342 Chickasaw St Unit 1,,,"2342 Chickasaw St, Cincinnati, OH 45219",False,,60,https://www.apartments.com/2342-chickasaw-st-cincinnati-oh-unit-1/hntw7v1/
@@ -172,24 +176,21 @@ Marburg - 260 Ludlow,,,"260 Ludlow Ave, Cincinnati, OH 45220",False,,,https://ww
 Roslyn,,,"359 Ludlow Ave, Cincinnati, OH 45220",False,,53,https://www.apartments.com/roslyn-cincinnati-oh/39z518d/
 Maplewood-3440 Telford,,,"3440 Telford St, Cincinnati, OH 45220",False,1905,19,https://www.apartments.com/maplewood-3440-telford-cincinnati-oh/v8rtfqg/
 2322 Flora St,,,"2322 Flora St, Cincinnati, OH 45219",False,1905,19,https://www.apartments.com/2322-flora-st-cincinnati-oh/ehl24kp/
-621 De Votie Ave Unit 7,,,"621 De Votie Ave, Cincinnati, OH 45225",False,1905,19,https://www.apartments.com/621-de-votie-ave-cincinnati-oh-unit-7/pb1rx6v/
 "6 br, 3.5 bath House - 302 Forest Avenue",,,"302 Forest Ave, Cincinnati, OH 45229",False,1905,19,https://www.apartments.com/6-br-35-bath-house-302-forest-avenue-cincinnati-oh/2l97z2b/
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
+201 Emming St,,,"201 Emming St, Cincinnati, OH 45219",False,1905,19,https://www.apartments.com/201-emming-st-cincinnati-oh/nmt6wzn/
+201 Emming St,,,"201 Emming St, Cincinnati, OH 45219",False,1905,19,https://www.apartments.com/201-emming-st-cincinnati-oh/gxxwedx/
+217 Emming St,,,"217 Emming St, Cincinnati, OH 45219",False,1905,19,https://www.apartments.com/217-emming-st-cincinnati-oh/5qyrhzn/
+421 Southview Ave,,,"421 Southview Ave, Cincinnati, OH 45219",False,1905,19,https://www.apartments.com/421-southview-ave-cincinnati-oh/lktwv0f/
 2886-2890 W McMicken Ave,,,"2886-2890 W McMicken Ave, Cincinnati, OH 45225",False,,,https://www.apartments.com/2886-2890-w-mcmicken-ave-cincinnati-oh/zcpjp2z/
 2222 Ravine St,,,"2222 Ravine St, Cincinnati, OH 45219",False,,,https://www.apartments.com/2222-ravine-st-cincinnati-oh/h8159g0/
-534 Rockdale Ave,,,"534 Rockdale Ave, Cincinnati, OH 45229",False,,,https://www.apartments.com/534-rockdale-ave-cincinnati-oh/2qnmpgb/
-534 Rockdale Ave Unit 534 #1,,,"534 Rockdale Ave, Cincinnati, OH 45229",False,,,https://www.apartments.com/534-rockdale-ave-cincinnati-oh-unit-534-1/cllplme/
 534 Rockdale Ave Unit 1,,,"534 Rockdale Ave, Cincinnati, OH 45229",False,,,https://www.apartments.com/534-rockdale-ave-cincinnati-oh-unit-1/ygbdjet/
+534 Rockdale Ave Unit 534 #1,,,"534 Rockdale Ave, Cincinnati, OH 45229",False,,,https://www.apartments.com/534-rockdale-ave-cincinnati-oh-unit-534-1/cllplme/
+534 Rockdale Ave,,,"534 Rockdale Ave, Cincinnati, OH 45229",False,,,https://www.apartments.com/534-rockdale-ave-cincinnati-oh/2qnmpgb/
 545 Rockdale Ave,,,"545 Rockdale Ave, Cincinnati, OH 45229",False,,,https://www.apartments.com/545-rockdale-ave-cincinnati-oh/fw4g2fs/
 3287 Morrison Ave,,,"3287 Morrison Ave, Cincinnati, OH 45220",False,,,https://www.apartments.com/3287-morrison-ave-cincinnati-oh/572393n/
 "Updated 3BR, all utilities paid!",,,"3547 Harvey Ave, Cincinnati, OH 45229",False,,,https://www.apartments.com/updated-3br-all-utilities-paid-cincinnati-oh-unit-copy/d6xrbtl/
-3 bedroom in Cincinnati OH 45229,,,"3547 Harvey Ave, Cincinnati, OH 45229",False,,,https://www.apartments.com/3-bedroom-in-cincinnati-oh-45229-cincinnati-oh/bky1dyc/
 "Updated 2BR, all utilities paid!",,,"3547 Harvey Ave, Cincinnati, OH 45229",False,,,https://www.apartments.com/updated-2br-all-utilities-paid-cincinnati-oh/vpwnkke/
+3 bedroom in Cincinnati OH 45229,,,"3547 Harvey Ave, Cincinnati, OH 45229",False,,,https://www.apartments.com/3-bedroom-in-cincinnati-oh-45229-cincinnati-oh/bky1dyc/
 221 Renner St Unit 4,,,"221 Renner St, Cincinnati, OH 45214",False,,,https://www.apartments.com/221-renner-st-cincinnati-oh-unit-4/ynq2z5v/
 1 BR with all utilities paid!,,,"624 Rockdale Ave, Cincinnati, OH 45229",False,,,https://www.apartments.com/1-br-with-all-utilities-paid-cincinnati-oh/byxytrc/
 2454 W McMicken Ave,,,"2454 W McMicken Ave, Cincinnati, OH 45214",False,,,https://www.apartments.com/2454-w-mcmicken-ave-cincinnati-oh/w9c8zjh/
@@ -199,31 +200,31 @@ Alston Park,,,"313-425 Glenwood Ave, Cincinnati, OH 45217",False,1965,39,https:/
 906 Morris St,,,"906 Morris St, Cincinnati, OH 45206",False,1965,39,https://www.apartments.com/906-morris-st-cincinnati-oh/j6pbe55/
 New Windsor Flats,,,"960 Francisco St, Cincinnati, OH 45206",False,2018,50,https://www.apartments.com/new-windsor-flats-cincinnati-oh/5ykpxmp/
 "2 br, 2.5 bath Townhome - 319 Boal Street",,,"319 Boal St, Cincinnati, OH 45202",False,,,https://www.apartments.com/2-br-25-bath-townhome-319-boal-street-cincinnati-oh/f09pb8r/
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
+2122 Sinton Ave,,,"2122 Sinton Ave, Cincinnati, OH 45206",False,,,https://www.apartments.com/2122-sinton-ave-cincinnati-oh/6pb43zs/
+2114 Sinton Ave,,,"2114 Sinton Ave, Cincinnati, OH 45206",False,,,https://www.apartments.com/2114-sinton-ave-cincinnati-oh/qf7d0ly/
+2338 Kemper Ln Unit 5,,,"2338 Kemper Ln, Cincinnati, OH 45206",False,,,https://www.apartments.com/2338-kemper-ln-cincinnati-oh-unit-5/0ylxgr0/
+2906 Alms Pl Unit 4,,,"2906 Alms Pl, Cincinnati, OH 45206",False,,,https://www.apartments.com/2906-alms-pl-cincinnati-oh-unit-4/wrl42tk/
+1632 Central Pkwy,,,"1632 Central Pkwy, Cincinnati, OH 45214",False,,,https://www.apartments.com/1632-central-pkwy-cincinnati-oh/eynmqrp/
+2378 Park Ave,,,"2378 Park Ave, Cincinnati, OH 45206",False,,,https://www.apartments.com/2378-park-ave-cincinnati-oh/95qctb6/
+2378 Park Ave,,,"2378 Park Ave, Cincinnati, OH 45206",False,,,https://www.apartments.com/2378-park-ave-cincinnati-oh/pqtt87r/
+2378 Park Ave,,,"2378 Park Ave, Cincinnati, OH 45206",False,,,https://www.apartments.com/2378-park-ave-cincinnati-oh/716wcbw/
+The Garber,,,"1607 Main St, Cincinnati, OH 45202",False,,,https://www.apartments.com/the-garber-cincinnati-oh/6wwxrlv/
+The Garber,,,"1607 Main St, Cincinnati, OH 45202",False,,,https://www.apartments.com/the-garber-cincinnati-oh/gjbfncy/
+532 Milton St,,,"532 Milton St, Cincinnati, OH 45202",False,,,https://www.apartments.com/532-milton-st-cincinnati-oh/vsy9gjg/
+1800 Linn St,,,"1800 Linn St, Cincinnati, OH 45214",False,,,https://www.apartments.com/1800-linn-st-cincinnati-oh/2g92t5b/
+2624 Victory Pkwy,,,"2624 Victory Pkwy, Cincinnati, OH 45206",False,,,https://www.apartments.com/2624-victory-pkwy-cincinnati-oh/92yt8s7/
+1414 Walnut St,,,"1414 Walnut St, Cincinnati, OH 45202",False,,,https://www.apartments.com/1414-walnut-st-cincinnati-oh/t82gkgc/
+1412 Walnut St,,,"1412 Walnut St, Cincinnati, OH 45202",False,,,https://www.apartments.com/1412-walnut-st-cincinnati-oh/61m5gxt/
 Machine Flats - 3301 Colerain,,,"3301 Colerain Ave, Cincinnati, OH 45225",True,1960,60,https://www.apartments.com/machine-flats-3301-colerain-cincinnati-oh/zhxhxbz/
 2217-2229 Victory Pkwy,,,"2217-2229 Victory Pkwy, Cincinnati, OH 45206",False,1960,60,https://www.apartments.com/2217-2229-victory-pkwy-cincinnati-oh/181k1j5/
+"1 br, 1 bath Apartment - 209 Woodward St",,,"209 Woodward St, Cincinnati, OH 45202",False,1960,60,https://www.apartments.com/1-br-1-bath-apartment-209-woodward-st-cincinnati-oh/63pf5fr/
 3115 Durrell Ave Unit 1,,,"3115 Durrell Ave, Cincinnati, OH 45207",False,1960,60,https://www.apartments.com/3115-durrell-ave-cincinnati-oh-unit-1/9ndypl7/
 1201 Edgecliff Rd,,,"1201 Edgecliff Rd, Cincinnati, OH 45206",False,1960,60,https://www.apartments.com/1201-edgecliff-rd-cincinnati-oh/0nl0cc1/
-1201 Edgecliff Rd,,,"1201 Edgecliff Rd, Cincinnati, OH 45206",False,1960,60,https://www.apartments.com/1201-edgecliff-rd-cincinnati-oh/95ejxy7/
-"2 br, 1 bath Apartment - 1201 Edgecliff Rd",,,"1201 Edgecliff Rd, Cincinnati, OH 45206",False,1960,60,https://www.apartments.com/2-br-1-bath-apartment-1201-edgecliff-rd-cincinnati-oh/k2yvhm9/
 1201 and 2023 Edgecliff Apartments,,,"1201 Edgecliff Rd, Cincinnati, OH 45206",False,1937,12,https://www.apartments.com/1201-and-2023-edgecliff-apartments-cincinnati-oh/ss88627/
 "1 br, 1 bath Apartment - 2023 Edgecliff Pt",,,"2023 Edgecliff Point, Cincinnati, OH 45206",False,1937,12,https://www.apartments.com/1-br-1-bath-apartment-2023-edgecliff-pt-cincinnati-oh/s1hbcx6/
 1119 Walnut St Unit 6,,,"1119 Walnut St, Cincinnati, OH 45202",False,1937,12,https://www.apartments.com/1119-walnut-st-cincinnati-oh-unit-6/py7t15r/
-2806 Woodburn Ave,,,"2806 Woodburn Ave, Cincinnati, OH 45206",False,1937,12,https://www.apartments.com/2806-woodburn-ave-cincinnati-oh/ec6jpvm/
 2806 Woodburn Ave,,,"2806 Woodburn Ave, Cincinnati, OH 45206",False,1937,12,https://www.apartments.com/2806-woodburn-ave-cincinnati-oh/76324hy/
+,,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -242,13 +243,15 @@ Machine Flats - 3301 Colerain,,,"3301 Colerain Ave, Cincinnati, OH 45225",True,1
 ,,,,,,,
 Groton Lofts,,,"700-704 Race St, Cincinnati, OH 45202",False,,42,https://www.apartments.com/groton-lofts-cincinnati-oh/4de22yk/
 3627 Montgomery Rd,,,"3627 Montgomery Rd, Cincinnati, OH 45207",False,,42,https://www.apartments.com/3627-montgomery-rd-cincinnati-oh/9ze2vf4/
-330 W 4th St,,,"330 W 4th St, Cincinnati, OH 45202",False,,42,https://www.apartments.com/330-w-4th-st-cincinnati-oh/1n87mx6/
+330 W 4th St,,,"330 W 4th St, Cincinnati, OH 45202",False,,42,https://www.apartments.com/330-w-4th-st-cincinnati-oh/htndvz2/
 330 W 4th St,,,"330 W 4th St, Cincinnati, OH 45202",False,,42,https://www.apartments.com/330-w-4th-st-cincinnati-oh/m9s8rml/
 330 W 4th St,,,"330 W 4th St, Cincinnati, OH 45202",False,,42,https://www.apartments.com/330-w-4th-st-cincinnati-oh/mcj8t4k/
 330 W 4th St,,,"330 W 4th St, Cincinnati, OH 45202",False,,42,https://www.apartments.com/330-w-4th-st-cincinnati-oh/gg1969z/
-330 W 4th St,,,"330 W 4th St, Cincinnati, OH 45202",False,,42,https://www.apartments.com/330-w-4th-st-cincinnati-oh/htndvz2/
 330 W 4th St,,,"330 W 4th St, Cincinnati, OH 45202",False,,42,https://www.apartments.com/330-w-4th-st-cincinnati-oh/79r10zx/
-Views of the City from This Cute Condo!,,,"2701 Lehman Rd, Cincinnati, OH 45204",False,,42,https://www.apartments.com/views-of-the-city-from-this-cute-condo-cincinnati-oh-unit-23a/mk9nc1j/
+330 W 4th St,,,"330 W 4th St, Cincinnati, OH 45202",False,,42,https://www.apartments.com/330-w-4th-st-cincinnati-oh/1n87mx6/
+,,,,,,,
+,,,,,,,
+,,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -271,59 +274,62 @@ The Hannaford,,,"803 E 6th St, Newport, KY 41071",False,1890,40,https://www.apar
 1637-1639 Glen Parker Ave,,,"1637-1639 Glen Parker Ave, Cincinnati, OH 45223",False,1890,40,https://www.apartments.com/1637-1639-glen-parker-ave-cincinnati-oh/zmx281z/
 4227 Virginia Ave,,,"4227 Virginia Ave, Cincinnati, OH 45223",False,1890,40,https://www.apartments.com/4227-virginia-ave-cincinnati-oh/0x9w3p2/
 2391 Wilder Avenue Apt 1,,,"2391 Wilder Ave, Cincinnati, OH 45204",False,1890,40,https://www.apartments.com/2391-wilder-avenue-apt-1-cincinnati-oh/bv0hg38/
-2088 Harrison Ave,,,"2088 Harrison Ave, Cincinnati, OH 45214",False,1890,40,https://www.apartments.com/2088-harrison-ave-cincinnati-oh/l2m2b1e/
-2203 Westwood Northern Blvd,,,"2203 Westwood Northern Blvd, Cincinnati, OH 45225",False,1890,40,https://www.apartments.com/2203-westwood-northern-blvd-cincinnati-oh/dgr129k/
-1810 Greenup St Unit 1,,,"1810 Greenup St, Covington, KY 41011",False,1890,40,https://www.apartments.com/1810-greenup-st-covington-ky-unit-1/lflb96d/
+,,,,,,,
+,,,,,,,
 ,,,,,,,
 Roebling Row,,,"240 Greenup St, Covington, KY 41011",False,2001,86,https://www.apartments.com/roebling-row-covington-ky/vh5s0bg/
 1 Roebling Way,,,"1 Roebling Way, Covington, KY 41011",False,2001,86,https://www.apartments.com/1-roebling-way-covington-ky/fk0rkvt/
 1218 Purcell Ave,,,"1218 Purcell Ave, Cincinnati, OH 45205",False,2001,86,https://www.apartments.com/1218-purcell-ave-cincinnati-oh/39b8cle/
 1801 Maple Ave,,,"1801 Maple Ave, Cincinnati, OH 45212",False,2001,86,https://www.apartments.com/1801-maple-ave-cincinnati-oh/0hh7rm3/
-Mills,,,"1912 Mills Ave, Cincinnati, OH 45212",False,2001,86,https://www.apartments.com/mills-cincinnati-oh/68qrnhr/
-Mills,,,"1912 Mills Ave, Cincinnati, OH 45212",False,2001,86,https://www.apartments.com/mills-cincinnati-oh/cym0lze/
 Mills,,,"1912 Mills Ave, Cincinnati, OH 45212",False,2001,86,https://www.apartments.com/mills-cincinnati-oh/yfr0l3r/
-2156-2175 Karla Ave,,,"2156-2175 Karla Ave, Cincinnati, OH 45211",False,2001,86,https://www.apartments.com/2156-2175-karla-ave-cincinnati-oh/yczscmt/
+Mills,,,"1912 Mills Ave, Cincinnati, OH 45212",False,2001,86,https://www.apartments.com/mills-cincinnati-oh/cym0lze/
+Mills,,,"1912 Mills Ave, Cincinnati, OH 45212",False,2001,86,https://www.apartments.com/mills-cincinnati-oh/68qrnhr/
 2156-2175 Karla Ave,,,"2156-2175 Karla Ave, Cincinnati, OH 45211",False,2001,86,https://www.apartments.com/2156-2175-karla-ave-cincinnati-oh/ktq5tp9/
+2156-2175 Karla Ave,,,"2156-2175 Karla Ave, Cincinnati, OH 45211",False,2001,86,https://www.apartments.com/2156-2175-karla-ave-cincinnati-oh/yczscmt/
 303 Greenup St,,,"303 Greenup St, Covington, KY 41011",False,2001,86,https://www.apartments.com/303-greenup-st-covington-ky/pfnrdmt/
-3515 McHenry Ave,,,"3515 McHenry Ave, Cincinnati, OH 45225",False,2001,86,https://www.apartments.com/3515-mchenry-ave-cincinnati-oh/s62lrr6/
 3515 McHenry Ave,,,"3515 McHenry Ave, Cincinnati, OH 45225",False,2001,86,https://www.apartments.com/3515-mchenry-ave-cincinnati-oh/39575xg/
-3515 McHenry Ave,,,"3515 McHenry Ave, Cincinnati, OH 45225",False,2001,86,https://www.apartments.com/3515-mchenry-ave-cincinnati-oh/d8d4ezl/
 "2 br, 1 bath Apartment - 3515 McHenry Avenue",,,"3515 McHenry Ave, Cincinnati, OH 45225",False,2001,86,https://www.apartments.com/2-br-1-bath-apartment-3515-mchenry-avenue-cincinnati-oh/3f198lf/
+3515 McHenry Ave,,,"3515 McHenry Ave, Cincinnati, OH 45225",False,2001,86,https://www.apartments.com/3515-mchenry-ave-cincinnati-oh/s62lrr6/
+3515 McHenry Ave,,,"3515 McHenry Ave, Cincinnati, OH 45225",False,2001,86,https://www.apartments.com/3515-mchenry-ave-cincinnati-oh/d8d4ezl/
 226 E 4th St,,,"226 E 4th St, Covington, KY 41011",False,2001,86,https://www.apartments.com/226-e-4th-st-covington-ky/cg14q2g/
 1116 Franklin Ave,,,"1116 Franklin Ave, Cincinnati, OH 45237",False,2001,86,https://www.apartments.com/1116-franklin-ave-cincinnati-oh/sh8wn16/
 1201 Franklin Ave,,,"1201 Franklin Ave, Cincinnati, OH 45237",False,2001,86,https://www.apartments.com/1201-franklin-ave-cincinnati-oh/zwh2dkx/
 1201 Franklin Ave,,,"1201 Franklin Ave, Cincinnati, OH 45237",False,2001,86,https://www.apartments.com/1201-franklin-ave-cincinnati-oh/s6r4y04/
 The Amos,,,"421 Garrard St, Covington, KY 41011",True,,,https://www.apartments.com/the-amos-covington-ky/tw1s1v8/
-2558 Madison Rd,,,"2558 Madison Rd, Cincinnati, OH 45208",False,,,https://www.apartments.com/2558-madison-rd-cincinnati-oh/mnxq9fl/
 2558 Madison Rd,,,"2558 Madison Rd, Cincinnati, OH 45208",False,,,https://www.apartments.com/2558-madison-rd-cincinnati-oh/89sbm93/
-121 E 9th St Unit 2,,,"121 E 9th St, Newport, KY 41071",False,,,https://www.apartments.com/121-e-9th-st-unit-2-newport-ky/kkk2yec/
+2558 Madison Rd,,,"2558 Madison Rd, Cincinnati, OH 45208",False,,,https://www.apartments.com/2558-madison-rd-cincinnati-oh/e2hzwqp/
+2558 Madison Rd,,,"2558 Madison Rd, Cincinnati, OH 45208",False,,,https://www.apartments.com/2558-madison-rd-cincinnati-oh/mnxq9fl/
+,,,,,,,
 The Guardian,,,"3375 McHenry Ave, Cincinnati, OH 45225",False,1973,140,https://www.apartments.com/the-guardian-cincinnati-oh/8m0jdb3/
 2570 Madison Rd,,,"2570 Madison Rd, Cincinnati, OH 45208",False,1973,140,https://www.apartments.com/2570-madison-rd-cincinnati-oh/x00qq1m/
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
+505 Russell St,,,"505 Russell St, Covington, KY 41011",False,1973,140,https://www.apartments.com/505-russell-st-covington-ky/vv55y3f/
+2262 Harrison Ave,,,"2262 Harrison Ave, Cincinnati, OH 45211",False,1973,140,https://www.apartments.com/2262-harrison-ave-cincinnati-oh/pec219r/
+808-810 Isabella Unit 3,,,"808-810 Isabella St, Newport, KY 41071",False,1973,140,https://www.apartments.com/808-810-isabella-unit-3-newport-ky/eng9shm/
+2266 Harrison Ave,,,"2266 Harrison Ave, Cincinnati, OH 45211",False,1973,140,https://www.apartments.com/2266-harrison-ave-cincinnati-oh/24bwjnc/
+1711 Monterey Ct,,,"1711 Monterey Ct, Cincinnati, OH 45223",False,1973,140,https://www.apartments.com/1711-monterey-ct-cincinnati-oh/fk2722s/
+948 Mansion Ave,,,"948 Mansion Ave, Cincinnati, OH 45205",False,1973,140,https://www.apartments.com/948-mansion-ave-cincinnati-oh/5xzkgcp/
+948 Mansion Ave,,,"948 Mansion Ave, Cincinnati, OH 45205",False,1973,140,https://www.apartments.com/948-mansion-ave-cincinnati-oh/1ezpg86/
+"4 br, 1 bath House - 811 Purcell Avenue 2",,,"811 Purcell Ave, Cincinnati, OH 45205",False,1973,140,https://www.apartments.com/4-br-1-bath-house-811-purcell-avenue-2-cincinnati-oh/fnre70r/
+35 E Pike St. Unit 4,,,"621 Scott St, Covington, KY 41011",False,1973,140,https://www.apartments.com/35-e-pike-st-unit-4-covington-ky/6w6bycs/
+2606 Madison Rd,,,"2606 Madison Rd, Cincinnati, OH 45208",False,1973,140,https://www.apartments.com/2606-madison-rd-cincinnati-oh/wv9g89j/
+2564 Erie Ave,,,"2564 Erie Ave, Cincinnati, OH 45208",False,1973,140,https://www.apartments.com/2564-erie-ave-cincinnati-oh/5mqxern/
+507 Western Ave,,,"507 Western Ave, Covington, KY 41011",False,1973,140,https://www.apartments.com/507-western-ave-covington-ky/d5f6blk/
+2617 Madison Rd,,,"2617 Madison Rd, Cincinnati, OH 45208",False,1973,140,https://www.apartments.com/2617-madison-rd-cincinnati-oh/4kq1lrl/
+311 W 6th St,,,"311 W 6th St, Covington, KY 41011",False,1973,140,https://www.apartments.com/311-w-6th-st-covington-ky/fxg4v1r/
+1409 Regent Ave,,,"1409 Regent Ave, Cincinnati, OH 45237",False,1973,140,https://www.apartments.com/1409-regent-ave-cincinnati-oh/nbm824n/
+940 Central Ave Unit 1,,,"940 Central Ave, Newport, KY 41071",False,1973,140,https://www.apartments.com/940-central-ave-unit-1-newport-ky/bke68g9/
+1640 Anita Pl,,,"1640 Anita Pl, Cincinnati, OH 45237",False,1973,140,https://www.apartments.com/1640-anita-pl-cincinnati-oh/649ngrt/
 1350 Edwards Road,,,"1350 Edwards Rd, Cincinnati, OH 45208",False,1927,13,https://www.apartments.com/1350-edwards-road-cincinnati-oh/gbcq5pw/
 1004 Greenup St,,,"1004 Greenup St, Covington, KY 41011",False,1927,13,https://www.apartments.com/1004-greenup-st-covington-ky/jhs15n6/
 335 W 9th St,,,"335 W 9th St, Covington, KY 41011",False,1927,13,https://www.apartments.com/335-w-9th-st-covington-ky/ss6eeg7/
 River's Edge,,,"1028 Greenup St, Covington, KY 41011",False,2014,120,https://www.apartments.com/rivers-edge-covington-ky/82v1wk0/
 417 Emma St Unit 2,,,"417 Emma St, Covington, KY 41011",False,2014,120,https://www.apartments.com/417-emma-st-unit-2-covington-ky/3e1z65e/
-2750 Linshaw Ct,,,"2750 Linshaw Ct, Cincinnati, OH 45208",False,2014,120,https://www.apartments.com/2750-linshaw-ct-cincinnati-oh/lhrzl8d/
-"3 br, 1 bath House - 551 Woodlawn",,,"551 Woodlawn Ave, Cincinnati, OH 45205",False,2014,120,https://www.apartments.com/3-br-1-bath-house-551-woodlawn-cincinnati-oh/5jfhn5m/
-"4 br, 2.5 bath House - 2524 Foxcove Court",,,"2524 Foxcove Ct, Cincinnati, OH 45211",False,2014,120,https://www.apartments.com/4-br-25-bath-house-2524-foxcove-court-cincinnati-oh/3nbdnkg/
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -368,12 +374,13 @@ Delta Flats,,,"427 Delta Ave, Cincinnati, OH 45226",False,2014,77,https://www.ap
 2680 Montana Ave Unit 4,,,"2680 Montana Ave, Cincinnati, OH 45211",False,2014,77,https://www.apartments.com/2680-montana-ave-cincinnati-oh-unit-4/tpwq429/
 The Aristo,,,"2944 Madison Rd, Cincinnati, OH 45209",False,1969,23,https://www.apartments.com/the-aristo-cincinnati-oh/phkptrs/
 "4 br, 2.5 bath House - 2749 Harris Avenue,",,,"2749 Harris Ave, Cincinnati, OH 45212",False,1969,23,https://www.apartments.com/4-br-25-bath-house-2749-harris-avenue-cincinnati-oh/e15ynnp/
-2828 Lafeuille Ave,,,"2828 Lafeuille Ave, Cincinnati, OH 45211",False,1969,23,https://www.apartments.com/2828-lafeuille-ave-cincinnati-oh/s9sfg17/
-4 bedroom in Cincinnati OH 45209,,,"2846 Minot Ave, Cincinnati, OH 45209",False,1969,23,https://www.apartments.com/4-bedroom-in-cincinnati-oh-45209-cincinnati-oh/443d42l/
-1529 Greenup Street Unit 2,,,"1529 Greenup St, Covington, KY 41011",False,1969,23,https://www.apartments.com/1529-greenup-street-unit-2-covington-ky/vs0e3ef/
-2 bedroom in Park Hills KY 41011,,,"1002 Parkvale Ct, Park Hills, KY 41011",False,1969,23,https://www.apartments.com/2-bedroom-in-park-hills-ky-41011-park-hills-ky/jmxf467/
-1541 Banklick St Unit 1,,,"1541 Banklick St, Covington, KY 41011",False,1969,23,https://www.apartments.com/1541-banklick-st-unit-1-covington-ky/d1egryj/
-2745-2749 Harrison Ave,,,"2745-2749 Harrison Ave, Cincinnati, OH 45211",False,1969,23,https://www.apartments.com/2745-2749-harrison-ave-cincinnati-oh/w1q4pjk/
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -391,19 +398,20 @@ McFarlan Park,,,"2870 Montana Ave, Cincinnati, OH 45211",False,1961,66,https://w
 5647 Hamilton Ave Unit 2,,,"5647 Hamilton Ave, Cincinnati, OH 45224",False,1961,66,https://www.apartments.com/5647-hamilton-ave-cincinnati-oh-unit-2/b3w8ve9/
 Cincinnati sweet home,,,"1615 Larch Ave, Cincinnati, OH 45224",False,1961,66,https://www.apartments.com/cincinnati-sweet-home-cincinnati-oh/3edm5gg/
 "1 br, 1 bath Apartment - 4104 Flower Avenue",,,"4104 Flower Ave, Cincinnati, OH 45205",False,1961,66,https://www.apartments.com/1-br-1-bath-apartment-4104-flower-avenue-cincinnati-oh/bcgpke8/
-"2 br, 1 bath House - 4553 Midland Avenue,",,,"4553 Midland Ave, Cincinnati, OH 45205",False,1961,66,https://www.apartments.com/2-br-1-bath-house-4553-midland-avenue-cincinnati-oh/9w6y4z7/
-4744 Green Glen Ln,,,"4744 Green Glen Ln, Cincinnati, OH 45238",False,1961,66,https://www.apartments.com/4744-green-glen-ln-cincinnati-oh/vzyb5gd/
-4100 Francis Ave,,,"4100 Francis Ave, Cincinnati, OH 45205",False,1961,66,https://www.apartments.com/4100-francis-ave-cincinnati-oh/c41dt8d/
-"1 br, 1 bath Apartment - 5766 Lantana Ave.",,,"5766 Lantana Ave, Cincinnati, OH 45224",False,1961,66,https://www.apartments.com/1-br-1-bath-apartment-5766-lantana-ave-cincinnati-oh/pnc7hsr/
-2841 Cypress Way Unit 2841-9,,,"2841 Cypress Way, Cincinnati, OH 45212",False,1961,66,https://www.apartments.com/2841-cypress-way-cincinnati-oh-unit-2841-9/79wmh4z/
+4220 Brownway Avenue - 2,,,"4220 Brownway Ave, Cincinnati, OH 45209",False,1961,66,https://www.apartments.com/4220-brownway-avenue-2-cincinnati-oh/0jcggh0/
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
 Rapid Run Terrace Apartments,,,"4656-4666 Rapid Run Rd, Cincinnati, OH 45238",False,1967,72,https://www.apartments.com/rapid-run-terrace-apartments-cincinnati-oh/ssqhvw5/
 3956 Taylor Ave,,,"3956 Taylor Ave, Cincinnati, OH 45209",False,1967,72,https://www.apartments.com/3956-taylor-ave-cincinnati-oh/83ekfk0/
 1532 Sleepy Hollow Rd,,,"1532 Sleepy Hollow Rd, Park Hills, KY 41011",False,1967,72,https://www.apartments.com/1532-sleepy-hollow-rd-park-hills-ky/5pxtt8p/
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
+7080 Eastlawn Dr Unit Apt. 4,,,"7080 Eastlawn Dr, Cincinnati, OH 45237",False,1967,72,https://www.apartments.com/7080-eastlawn-dr-cincinnati-oh-unit-apt-4/3x9fh1e/
+1147 Olivia Ln,,,"1147 Olivia Ln, Cincinnati, OH 45238",False,1967,72,https://www.apartments.com/1147-olivia-ln-cincinnati-oh/y68j8fs/
+4732 Rapid Run Rd,,,"4732 Rapid Run Rd, Cincinnati, OH 45238",False,1967,72,https://www.apartments.com/4732-rapid-run-rd-cincinnati-oh/e3xrnxm/
+"2 br, 1 bath Apartment - 645 Highland Avenue",,,"645 Highland Ave, Fort Thomas, KY 41075",False,1967,72,https://www.apartments.com/2-br-1-bath-apartment-645-highland-avenue-fort-thomas-ky/ekyy8tq/
+"2 br, 1 bath House - 6912 Somerset Drive,",,,"6912 Somerset Dr, Cincinnati, OH 45224",False,1967,72,https://www.apartments.com/2-br-1-bath-house-6912-somerset-drive-cincinnati-oh/bhym0y8/
 4431 W 8th St,,,"4431 W 8th St, Cincinnati, OH 45238",False,1970,24,https://www.apartments.com/4431-w-8th-st-cincinnati-oh/rqfqs71/
 3201 Vine St,,,"3201 Vine St, Cincinnati, OH 45220",False,,,https://www.apartments.com/3201-vine-st-cincinnati-oh/xb2tyvm/
 Jefferson House,,,"2702 Jefferson Ave, Cincinnati, OH 45219",False,1880,,https://www.apartments.com/jefferson-house-cincinnati-oh/kbq7t5b/
@@ -460,7 +468,6 @@ University Village Apartments,,,"2955-2965 W McMicken Ave, Cincinnati, OH 45225"
 3577 Alaska Ave,,,"3577 Alaska Ave, Avondale, OH 45229",False,1917,,https://www.apartments.com/3577-alaska-ave-avondale-oh/0vw3pc2/
 719 Wayne Street,,,"719 Wayne St, Cincinnati, OH 45206",False,1992,19,https://www.apartments.com/719-wayne-street-cincinnati-oh/15g6fz7/
 Beecher Apartments,,,"830-846 Beecher St, Cincinnati, OH 45206",False,1969,60,https://www.apartments.com/beecher-apartments-cincinnati-oh/7jjk71w/
-2319 Kenton St,,,"2319 Kenton St, Cincinnati, OH 45206",False,1910,,https://www.apartments.com/2319-kenton-st-cincinnati-oh/w3nghkk/
 2501 W McMicken Ave,,,"2501 W McMicken Ave, Cincinnati, OH 45214",False,1890,,https://www.apartments.com/2501-w-mcmicken-ave-cincinnati-oh/vsp0t1d/
 771 E McMillan St,,,"771 E McMillan St, Cincinnati, OH 45206",False,,,https://www.apartments.com/771-e-mcmillan-st-cincinnati-oh/d1y8qvh/
 846-851 Oak St,,,"846-851 Oak St, Cincinnati, OH 45206",False,1897,10,https://www.apartments.com/846-851-oak-st-cincinnati-oh/452sh7j/
@@ -476,7 +483,6 @@ Keys Hill,,,"1-7 Park Pl, Cincinnati, OH 45219",False,1890,,https://www.apartmen
 343 Dorchester Ave,,,"343 Dorchester Ave, Cincinnati, OH 45219",False,,,https://www.apartments.com/343-dorchester-ave-cincinnati-oh/tyfj818/
 869-871 Buena Vista Pl,,,"869-871 Buena Vista Pl, Cincinnati, OH 45206",False,1900,,https://www.apartments.com/869-871-buena-vista-pl-cincinnati-oh/n8htxvm/
 2957-2959 Massachusetts Ave,,,"2957-2959 Massachusetts Ave, Cincinnati, OH 45225",False,,,https://www.apartments.com/2957-2959-massachusetts-ave-cincinnati-oh/9qt3fh5/
-Washington Terrace,,,"32 Washington Ter, Cincinnati, OH 45206",False,,26,https://www.apartments.com/washington-terrace-cincinnati-oh/hlx4r50/
 Lexington Apartments,,,"872 Buena Vista Pl, Cincinnati, OH 45206",False,1901,,https://www.apartments.com/lexington-apartments-cincinnati-oh/5g9xkjm/
 1909 Race,,,"1909 Race, Cincinnati, OH 45202",False,1875,,https://www.apartments.com/1909-race-cincinnati-oh/5frtt3q/
 467 W McMicken Ave,,,"467 W McMicken Ave, Cincinnati, OH 45214",False,1886,,https://www.apartments.com/467-w-mcmicken-ave-cincinnati-oh/sv93jy6/
@@ -488,8 +494,6 @@ Chapel Square Apartments,,,"916-926 Chapel St, Cincinnati, OH 45206",False,1900,
 2900-2902 Colerain Ave,,,"2900-2902 Colerain Ave, Cincinnati, OH 45225",False,1880,,https://www.apartments.com/2900-2902-colerain-ave-cincinnati-oh/802s422/
 2607 Cook St,,,"2607 Cook St, Cincinnati, OH 45214",False,,,https://www.apartments.com/2607-cook-st-cincinnati-oh/ycjp8ds/
 462 Whiteman St,,,"462 Whiteman St, Cincinnati, OH 45214",False,,,https://www.apartments.com/462-whiteman-st-cincinnati-oh/dql2v0l/
-642 W McMicken Ave,,,"642 W McMicken Ave, Cincinnati, OH 45214",False,1890,,https://www.apartments.com/642-w-mcmicken-ave-cincinnati-oh/7j766tw/
-2366 St James Ave,,,"2366 St James Ave, Cincinnati, OH 45206",False,1914,,https://www.apartments.com/2366-st-james-ave-cincinnati-oh/n8ndv6n/
 3027 Gilbert Ave,,,"3027 Gilbert Ave, Cincinnati, OH 45206",False,1900,14,https://www.apartments.com/3027-gilbert-ave-cincinnati-oh/7s30v5x/
 3073 Mentor Ave,,,"3073 Mentor Ave, Cincinnati, OH 45206",False,,,https://www.apartments.com/3073-mentor-ave-cincinnati-oh/c96kh8e/
 918 Morris St,,,"918 Morris St, Cincinnati, OH 45206",False,1900,12,https://www.apartments.com/918-morris-st-cincinnati-oh/emkky1q/
@@ -526,9 +530,7 @@ Sinton Flats,,,"340-344 W 4th St, Cincinnati, OH 45202",False,,15,https://www.ap
 2308 Ashland Ave,,,"2308 Ashland Ave, Cincinnati, OH 45206",False,1918,,https://www.apartments.com/2308-ashland-ave-cincinnati-oh/mlsplrj/
 1339 Lincoln Ave,,,"1339 Lincoln Ave, Cincinnati, OH 45206",False,1901,10,https://www.apartments.com/1339-lincoln-ave-cincinnati-oh/1czflz5/
 1211 Broadway,,,"1211 Broadway, Cincinnati, OH 45202",False,1884,,https://www.apartments.com/1211-broadway-cincinnati-oh/s1z81l4/
-2342 Upland Pl,,,"2342 Upland Pl, Cincinnati, OH 45206",False,1885,,https://www.apartments.com/2342-upland-pl-cincinnati-oh/jtlrs94/
 224 W 14th St,,,"224 W 14th St, Cincinnati, OH 45202",False,,,https://www.apartments.com/224-w-14th-st-cincinnati-oh/drev4dl/
-2304 Upland Pl,,,"2304 Upland Pl, Cincinnati, OH 45206",False,,,https://www.apartments.com/2304-upland-pl-cincinnati-oh/s80rqb4/
 1111 Spring St,,,"1111 Spring St, Cincinnati, OH 45202",False,,10,https://www.apartments.com/1111-spring-st-cincinnati-oh/jg1btc6/
 1237 Elsinore Ave,,,"1237 Elsinore Ave, Cincinnati, OH 45202",False,,,https://www.apartments.com/1237-elsinore-ave-cincinnati-oh/slpq607/
 Bulluck Terrace,,,"2540-2550 Woodburn Ave, Cincinnati, OH 45206",False,1925,,https://www.apartments.com/bulluck-terrace-cincinnati-oh/xe1lven/
@@ -552,7 +554,6 @@ Madora,,,"1710 Madison Rd, Cincinnati, OH 45206",False,,,https://www.apartments.
 3896 Reading Rd,,,"3896 Reading Rd, Blue Ash, OH 45229",False,1930,63,https://www.apartments.com/3896-reading-rd-blue-ash-oh/8n7k8s2/
 1637-1639 Tremont Ave,,,"1637-1639 Tremont Ave, Cincinnati, OH 45214",False,1885,,https://www.apartments.com/1637-1639-tremont-ave-cincinnati-oh/5tqyzwn/
 1661-1669 Montrose St,,,"1661-1669 Montrose St, Cincinnati, OH 45214",False,,12,https://www.apartments.com/1661-1669-montrose-st-cincinnati-oh/mzx15hj/
-4419 Greenlee St,,,"4419 Greenlee St, Cincinnati, OH 45217",False,1928,,https://www.apartments.com/4419-greenlee-st-cincinnati-oh/kft99v8/
 Debbe Lane Apartments,,,"4027 Reading Rd, Cincinnati, OH 45229",False,1904,68,https://www.apartments.com/debbe-lane-apartments-cincinnati-oh/vjnmd7d/
 4608 Tower Ave,,,"4608 Tower Ave, Saint Bernard, OH 45217",False,1915,,https://www.apartments.com/4608-tower-ave-saint-bernard-oh/tt7x0lb/
 The Lofts at Fountain Square,,,"417 Vine St, Cincinnati, OH 45202",False,1875,20,https://www.apartments.com/the-lofts-at-fountain-square-cincinnati-oh/dsyyt9j/
@@ -639,7 +640,6 @@ Carnegie Square Apartments,,,"1023 Scott St, Covington, KY 41011",False,,,https:
 503 Woodlawn Ave,,,"503 Woodlawn Ave, Cincinnati, OH 45205",False,1965,16,https://www.apartments.com/503-woodlawn-ave-cincinnati-oh/cv144me/
 1049 Banklick St,,,"1049 Banklick St, Covington, KY 41011",False,,,https://www.apartments.com/1049-banklick-st-covington-ky/48jd0jh/
 2751 Arbor Ave,,,"2751 Arbor Ave, Cincinnati, OH 45209",False,1950,,https://www.apartments.com/2751-arbor-ave-cincinnati-oh/m846q0h/
-5013 Newfield Ave,,,"5013 Newfield Ave, Cincinnati, OH 45237",False,1946,,https://www.apartments.com/5013-newfield-ave-cincinnati-oh/cneh88f/
 5146 Carthage Ave,,,"5146 Carthage Ave, Norwood, OH 45212",False,1958,10,https://www.apartments.com/5146-carthage-ave-norwood-oh/e7jv35n/
 393 Elberon Ave,,,"393 Elberon Ave, Cincinnati, OH 45205",False,1929,,https://www.apartments.com/393-elberon-ave-cincinnati-oh/5mlw5mp/
 1236-1238 Scott St,,,"1236-1238 Scott St, Covington, KY 41011",False,,,https://www.apartments.com/1236-1238-scott-st-covington-ky/ksmjg1b/

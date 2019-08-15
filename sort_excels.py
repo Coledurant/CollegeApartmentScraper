@@ -1,5 +1,6 @@
 import os
 import pprint
+import pandas as pd
 
 def get_directory_structure(rootdir = os.getcwd()):
     """
@@ -37,3 +38,32 @@ print('\n\n\n\n')
 for state, list_college_excel_files in walk_dict.items():
 
     print(state)
+
+
+
+
+#and so on to read different excel
+
+writer=pd.ExcelWriter()
+
+
+
+
+def add_excel(excel_path, sheet_name):
+
+    '''
+    Will read the excel file and create a new sheet inside of the main excel
+    file with the title of 'College Name (state abbreviation)'
+
+    Parameters:
+        excel_path (os.path): The path to the excel file to read
+    Returns:
+        ---
+    '''
+
+    frame = pd.read_excel(excel_path)
+
+    frame.to_excel(writer, sheet_name)
+
+
+writer.save("apartment_information.xlsx")
