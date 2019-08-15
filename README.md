@@ -46,6 +46,9 @@ your Google Places API key, and changing the filename from config.txt to config.
 
   - If you do not have a key, one can be found here:
       https://developers.google.com/places/web-service/get-api-key
+  - If there is no API present, or there is an error with the Google Places API,
+    it will attempt to just scrape google quick answer for the address and latitude
+    and longitude
 
 ## Usage
 
@@ -57,14 +60,14 @@ python CLIFinder.py
 
 Required inputs:
   - College name
-  - Enrollment
   - College location (city)
   - College state abbreviation
 
-Optional (suggested to speed up, and increase accuracy of search) Inputs:
+Optional (just press enter if not answering) Inputs:
   - Address
   - Latitude
   - Longitude
+  - Enrollment
 
 This will save a CSV file to the CSVs folder along with an excel file to the
 respective state abbreviation folder in the /Excels folder.
