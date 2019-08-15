@@ -8,21 +8,19 @@ Features section of their webpage. This will be changed soon.
 
 ## Installation
 
-Clone Repo
-
 ```bash
 git clone https://github.com/Coledurant/CollegeApartmentScraper.git
 
 cd CollegeApartmentScraper
 ```
 
-Activate virtualenv
+Create virtualenv
 
 ```bash
 virtualenv env
 ```
 
-<hr>
+Activate virtualenv
 
 Mac OS / Linux
 
@@ -40,6 +38,14 @@ Install requirements
 ```bash
 pip install -r requirements.txt
 ```
+
+## Config
+
+Edit the config.txt file inside of /conf by replacing {your_api_key_here} with
+your Google Places API key, and changing the filename from config.txt to config.ini
+
+  - If you do not have a key, one can be found here:
+      https://developers.google.com/places/web-service/get-api-key
 
 ## Usage
 

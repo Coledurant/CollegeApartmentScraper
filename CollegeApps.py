@@ -1,5 +1,3 @@
-from scraper import *
-
 from geopy.geocoders import Nominatim, base
 import geopy
 import geopy.distance as distance
@@ -8,39 +6,48 @@ import pandas as pd
 import operator
 import logging
 import os
-
 import requests
+import json
 
-try:
-    import configparser
-except ImportError:
-    import ConfigParser as configparser
-
-
+from utils.scraper import *
+from utils.read_config import initialize_config, get_variable
+from utils.google_quick_answer import scrape_google_for_quick_answer
 
 
-conf = configparser.ConfigParser()
-config_file = os.path.join(os.path.dirname(__file__), "conf/config.ini")
-conf.read(config_file)
+################################################################################
+################################################################################
+################################################################################
 
-PLACES_API_KEY = conf.get('google_places', 'PLACES_API_KEY')
 
-logger = logging.getLogger(__name__)
+LOGGER = logging.getLogger(__name__)
+LOGGER.setLevel(logging.INFO)
 
-geolocator = Nominatim(user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36')
+handler = logging.FileHandler('CollegeApartmentScraper.log')
+handler.setLevel(logging.INFO)
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+LOGGER.addHandler(handler)
 
+CONF = initialize_config('conf/config.ini')
+PLACES_API_KEY = get_variable(conf = CONF, config_variable = 'PLACES_API_KEY',
+                                variable_type = 'str', config_section = 'google_places')
+
+GEOLOCATOR = Nominatim(user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36')
 
 BASE_DIR = os.getcwd()
 
-csv_dir = os.path.join(BASE_DIR, 'CSVs')
-if not os.path.exists(csv_dir):
-    os.mkdir(csv_dir)
+CSV_DIR = os.path.join(BASE_DIR, 'CSVs')
+if not os.path.exists(CSV_DIR):
+    os.mkdir(CSV_DIR)
 
-excel_dir = os.path.join(BASE_DIR, 'Excels')
-if not os.path.exists(excel_dir):
-    os.mkdir(excel_dir)
+EXCEL_DIR = os.path.join(BASE_DIR, 'Excels')
+if not os.path.exists(EXCEL_DIR):
+    os.mkdir(EXCEL_DIR)
 
 
+################################################################################
+################################################################################
+################################################################################
 
 
 class College(object):
@@ -90,15 +97,31 @@ class College(object):
 
         search_term = self.college_name.replace(' ', '%20')
 
-        search_url = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input={0}&inputtype=textquery&fields=formatted_address&key={1}'.format(search_term, FIND_PLACE_API_KEY)
+        search_url = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input={0}&inputtype=textquery&fields=formatted_address&key={1}'.format(search_term, PLACES_API_KEY)
 
-        html = requests.get(search_url).content
+        request = requests.get(search_url).text
 
-        address = html['formatted_address']
+        data = json.loads(request)
 
-        self.address = address
+        if data['status'] == 'OK':
 
-        return address
+            formatted_address = data.get('candidates')[0].get('formatted_address')
+
+            self.address = address
+
+        elif data['status'] == 'OVER_QUERY_LIMIT':
+
+            LOGGER.warn('Google places API over limit')
+
+            google_scrape_result = scrape_google_for_quick_answer("{0}, {1}, {2} Address".format(self.college_name, self.college_location, self.state))
+
+            if google_scrape_result is not None:
+
+                self.address = google_scrape_result
+
+        else:
+
+            LOGGER.error('Check College.find_address_from_google()')
 
 
 
@@ -110,17 +133,18 @@ class College(object):
 
 
         try:
-            location = geolocator.geocode(self.address, timeout=base.DEFAULT_SENTINEL)
+            location = GEOLOCATOR.geocode(self.address, timeout=base.DEFAULT_SENTINEL)
             lat = location.latitude
             lon = location.longitude
 
             self.lat = lat
             self.lon = lon
 
+            LOGGER.info('Found lat, lon pair for {0}'.format(self.college_name))
+
         except Exception as e:
 
-            print(e)
-            print('College lat lon error')
+            LOGGER.warning('Error finding lat, lon pair for {0}'.format(self.college_name))
 
         finally:
             time.sleep(1)
@@ -139,6 +163,10 @@ class College(object):
         fname = self.college_name + '.csv'
 
         if self.lat == None or self.lon == None:
+
+            if self.address == None:
+
+                self.find_address_from_google()
 
             self.find_lat_lon()
 
@@ -180,8 +208,8 @@ class College(object):
 
 
 
-        os.chdir(excel_dir)
-        state_dir = os.path.join(excel_dir, self.state)
+        os.chdir(EXCEL_DIR)
+        state_dir = os.path.join(EXCEL_DIR, self.state)
         if not os.path.exists(state_dir):
             os.mkdir(state_dir)
         os.chdir(state_dir)
@@ -195,8 +223,6 @@ class College(object):
         self.apartment_classes = app_classes
 
         return app_classes
-
-
 
 class Apartment(object):
 
@@ -260,7 +286,7 @@ class Apartment(object):
 
 
         try:
-            location = geolocator.geocode(self.address, timeout=base.DEFAULT_SENTINEL)
+            location = GEOLOCATOR.geocode(self.address, timeout=base.DEFAULT_SENTINEL)
             lat = location.latitude
             lon = location.longitude
 
@@ -302,7 +328,7 @@ class Apartment(object):
                 miles_away = None
 
         except Exception as e:
-            logger.error('Lat, Lon: {0}, {1} are incorrect... try calling find_lat_lon() on {2} College Class'.format(self.college.lat, self.college.lon, self.college.college_name))
+            LOGGER.error('Lat, Lon: {0}, {1} are incorrect... try calling find_lat_lon() on {2} College Class'.format(self.college.lat, self.college.lon, self.college.college_name))
             print(e)
             miles_away = None
 
@@ -313,64 +339,9 @@ class Apartment(object):
         return miles_away
 
 
-
-
-
-def fix_enrollment_value(enrollment_val):
-
-    '''
-    Some values from wiki pages have characters that prevent them from being turned into an int so this fixes that
-    Examples of what it will change:
-        84[14] -> 84
-        3, 164 -> 3164
-    Parameters:
-        enrollment_val (str): Enrollment value from the wiki table
-    Returns:
-        enrollment (int): Fixed enrollment value
-    '''
-
-    if '[' in enrollment_val:
-
-        enrollment = enrollment_val.split('[')[0]
-    elif ',' in enrollment_val:
-
-        enrollment = enrollment_val.replace(', ', '')
-
-    else:
-
-        enrollment = enrollment_val
-
-    return int(enrollment)
-
-def sort_colleges_by_enrollment(college_class_list):
-
-    sorted_college_class_list = sorted(college_class_list, key=operator.attrgetter('enrollment'))
-
-    return sorted_college_class_list[::-1]
-
-
-def get_dist_from_college_outside_funct(college_lat, college_lon, apartment_lat, apartment_lon):
-
-    '''
-    Finds the distance away from the college the apartment is assigned to
-    Returns:
-        miles_away (float): The distance in miles between the college and apartment complex
-    '''
-    try:
-        college_lat_lon_tup = (college_lat, college_lon)
-        if college_lat == None or college_lon == None:
-            raise ValueError
-        self_lat_lon_tup = (apartment_lat, apartment_lon)
-        miles_away = round(distance.distance(college_lat_lon_tup, self_lat_lon_tup).miles, 2)
-
-    except Exception as e:
-        logger.error('College Lat, Lon values are incorrect... try calling find_lat_lon()')
-        print(e)
-        miles_away = None
-
-    print("{0}, {1} is {2} miles away from {3}, {4}".format(self.lat, self.lon, miles_away, self.college.lat, self.college.lon))
-
-    return miles_away
+################################################################################
+################################################################################
+################################################################################
 
 
 if __name__ == '__main__':

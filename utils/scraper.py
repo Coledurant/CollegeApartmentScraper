@@ -16,13 +16,13 @@ from geopy.exc import GeocoderTimedOut
 
 BASE_DIR = os.getcwd()
 
-csv_dir = os.path.join(BASE_DIR, 'CSVs')
-if not os.path.exists(csv_dir):
-    os.mkdir(csv_dir)
+CSV_DIR = os.path.join(BASE_DIR, 'CSVs')
+if not os.path.exists(CSV_DIR):
+    os.mkdir(CSV_DIR)
 
-excel_dir = os.path.join(BASE_DIR, 'Excels')
-if not os.path.exists(excel_dir):
-    os.mkdir(excel_dir)
+EXCEL_DIR = os.path.join(BASE_DIR, 'Excels')
+if not os.path.exists(EXCEL_DIR):
+    os.mkdir(EXCEL_DIR)
 
 def create_csv(url, fname):
 
@@ -31,7 +31,7 @@ def create_csv(url, fname):
     '''
 
 
-    os.chdir(csv_dir)
+    os.chdir(CSV_DIR)
 
     # avoid the issue on Windows where there's an extra space every other line
     if sys.version_info[0] == 2:  # Not named on 2.6
@@ -323,7 +323,7 @@ def main(url, fname):
 
 def get_frame(csv_fname):
 
-    os.chdir(csv_dir)
+    os.chdir(CSV_DIR)
 
     frame = pd.read_csv(csv_fname, encoding="ISO-8859-1")
     frame.drop_duplicates(keep="first", inplace=True)
