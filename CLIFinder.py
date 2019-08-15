@@ -4,10 +4,10 @@ from utils.scraper import *
 import logging
 
 LOGGER = logging.getLogger(__name__)
-LOGGER.setLevel(logging.INFO)
+LOGGER.setLevel(logging.DEBUG)
 
 handler = logging.FileHandler('CollegeApartmentScraper.log')
-handler.setLevel(logging.INFO)
+handler.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 handler.setFormatter(formatter)
 LOGGER.addHandler(handler)
@@ -58,7 +58,7 @@ def input_for_college():
     except ValueError:
         lon = None
 
-    print('\n\n\nGetting apartments for {0}\n\n\n----------\n\n\n'.format(college_name))
+    LOGGER.debug('\n\nCollege Name: {0}\nLocation: {1}\nState: {2}\nEnrollment: {3}\nAddress: {4}\nLat, Lon; ({5}, {6})\n\n'.format(college_name, college_location, state, enrollment, address, lat, lon))
 
     college = College(college_name=college_name, enrollment=enrollment, college_location=college_location, state=state, address=address, lat=lat, lon=lon)
 

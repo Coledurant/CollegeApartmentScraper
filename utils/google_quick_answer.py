@@ -26,8 +26,6 @@ def fetch_results(search_term, language_code):
 
 def parse_results_for_quick_answer(html, search_term):
 
-    LOGGER.info('searching for: {0}'.format(search_term))
-
     soup = BeautifulSoup(html, 'html.parser')
 
     result_block = soup.find('div', attrs={'class': 'Z0LcW'})
@@ -61,7 +59,7 @@ def scrape_google_for_quick_answer(search_term, language_code="en"):
 if __name__ == '__main__':
 
     try:
-        results = scrape_google_for_quick_answer('University of Cincinnati Address')
+        results = scrape_google_for_quick_answer('university of cincinnati latitude and longitude')
         print(results)
     except Exception as e:
         print(e)

@@ -20,10 +20,10 @@ from utils.google_quick_answer import scrape_google_for_quick_answer
 
 
 LOGGER = logging.getLogger(__name__)
-LOGGER.setLevel(logging.INFO)
+LOGGER.setLevel(logging.DEBUG)
 
 handler = logging.FileHandler('CollegeApartmentScraper.log')
-handler.setLevel(logging.INFO)
+handler.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 handler.setFormatter(formatter)
 LOGGER.addHandler(handler)
@@ -95,6 +95,8 @@ class College(object):
             adress (str): The address of the place searched
         '''
 
+        LOGGER.info('Searching for address on {0}'.format(self.college_name))
+
         search_term = self.college_name.replace(' ', '%20')
 
         search_url = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input={0}&inputtype=textquery&fields=formatted_address&key={1}'.format(search_term, PLACES_API_KEY)
@@ -111,7 +113,7 @@ class College(object):
 
         elif data['status'] == 'OVER_QUERY_LIMIT':
 
-            LOGGER.warn('Google places API over limit')
+            LOGGER.warning('Google places API over limit')
 
             google_scrape_result = scrape_google_for_quick_answer("{0}, {1}, {2} Address".format(self.college_name, self.college_location, self.state))
 
@@ -131,6 +133,8 @@ class College(object):
         Finds lat,lon pair from address by using geopy Nominatim
         '''
 
+        LOGGER.info('Searching for lat, lon pair on {0}'.format(self.college_name))
+
 
         try:
             location = GEOLOCATOR.geocode(self.address, timeout=base.DEFAULT_SENTINEL)
@@ -140,11 +144,26 @@ class College(object):
             self.lat = lat
             self.lon = lon
 
-            LOGGER.info('Found lat, lon pair for {0}'.format(self.college_name))
+            LOGGER.debug('GEOLOCATOR found lat, lon pair for {0}'.format(self.college_name))
 
         except Exception as e:
 
-            LOGGER.warning('Error finding lat, lon pair for {0}'.format(self.college_name))
+            LOGGER.debug('GEOLOCATOR did not find lat, lon pair for {0}'.format(self.college_name))
+
+            lat_lon_quick_scrape = scrape_google_for_quick_answer("{0}, {1}, {2} latitude and longitude".format(self.college_name, self.college_location, self.state))
+
+            lat_lon_possible_list = re.findall("[-+]?[.]?[\d]+(?:,\d\d\d)*[\.]?\d*(?:[eE][-+]?\d+)?", lat_lon_quick_scrape)
+
+            if len(lat_lon_possible_list) == 2:
+
+                self.lat = float(lat_lon_possible_list[0])
+                self.lon = float(lat_lon_possible_list[1])
+
+                LOGGER.debug('Google quick scrape found lat, lon pair of {0}, {1}'.format(self.lat, self.lon))
+
+            else:
+
+                LOGGER.warning('{0} still has no lat, lon pair after trying everything'.format(self.college_name))
 
         finally:
             time.sleep(1)
@@ -160,6 +179,8 @@ class College(object):
             app_classes (list): A list of apartment classes that the scraper could find around the college campus
         '''
 
+        LOGGER.info('Finding apartments for {0}'.format(self.college_name))
+
         fname = self.college_name + '.csv'
 
         if self.lat == None or self.lon == None:
@@ -172,7 +193,7 @@ class College(object):
 
         apartments_base_url = 'https://www.apartments.com/off-campus-housing'
 
-        university_apartments_url = apartments_base_url + '/{0}/{1}/{2}'.format(self.state.lower(), self.college_location.lower(), self.college_name.lower().replace(' ', '-'))
+        university_apartments_url = apartments_base_url + '/{0}/{1}/{2}'.format(self.state.lower().replace(' ', '-'), self.college_location.lower().replace(' ', '-'), self.college_name.lower().replace(' ', '-'))
 
         main(university_apartments_url, fname)
 
@@ -189,9 +210,6 @@ class College(object):
             app_class.get_dist_from_college()
 
             app_classes.append(app_class)
-
-
-        print(len(app_classes))
 
         app_class_frame = pd.DataFrame(columns = ['Name', 'Units', 'Distance From {0}'.format(self.college_name), 'Address', 'Contact', 'Lat', 'Lon'])
 
