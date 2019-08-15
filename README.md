@@ -71,3 +71,7 @@ Optional (just press enter if not answering) Inputs:
 
 This will save a CSV file to the CSVs folder along with an excel file to the
 respective state abbreviation folder in the /Excels folder.
+
+## Coming Up
+
+Scraping by state
