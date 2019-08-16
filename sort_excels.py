@@ -2,8 +2,7 @@ import os
 import pandas as pd
 from functools import reduce
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-EXCEL_DIR = os.path.join(BASE_DIR, 'Excels')
+from definitions import *
 
 def get_directory_structure(rootdir = os.getcwd()):
     """
@@ -53,27 +52,34 @@ if __name__ == '__main__':
 
     print('\nWriting all files in the /Excel directory to their own sheet in apartment_information.xlsx...\n')
 
-    walk_dict = get_directory_structure(os.path.join(os.getcwd(), 'Excels')).get('Excels')
+    walk_dict = get_directory_structure(EXCEL_DIR).get('Excels')
 
     writer=pd.ExcelWriter("apartment_information.xlsx")
 
 
-    for state_abbreviation, dict_college_excel_files in walk_dict.items():
+    try:
 
-        state_excel_path = os.path.join(EXCEL_DIR, state_abbreviation)
+        for state_abbreviation, dict_college_excel_files in walk_dict.items():
 
-        # Dict of excel file name : None because there will only be excel files here,
-        # and no folders
-        for excel_name,_ in dict_college_excel_files.items():
+            state_excel_path = os.path.join(EXCEL_DIR, state_abbreviation)
 
-            excel_path = os.path.join(state_excel_path, excel_name)
+            # Dict of excel file name : None because there will only be excel files here,
+            # and no folders
+            for excel_name,_ in dict_college_excel_files.items():
 
-            sheet_name = excel_name.replace('.xlsx', '') + ' ({0})'.format(state_abbreviation)
+                excel_path = os.path.join(state_excel_path, excel_name)
 
-            add_excel_sheet(excel_path = excel_path, sheet_name = sheet_name, writer = writer)
+                sheet_name = excel_name.replace('.xlsx', '') + ' ({0})'.format(state_abbreviation)
 
-    os.chdir(EXCEL_DIR)
+                add_excel_sheet(excel_path = excel_path, sheet_name = sheet_name, writer = writer)
 
-    writer.save()
+        os.chdir(EXCEL_DIR)
 
-    os.chdir(BASE_DIR)
+        writer.save()
+
+        os.chdir(ROOT_DIR)
+
+    except AttributeError as e:
+
+        LOGGER.error(e)
+        LOGGER.debug('Make sure there is an /Excels folder and that it is populated')

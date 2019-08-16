@@ -9,6 +9,7 @@ import os
 import requests
 import json
 
+from definitions import *
 from utils.scraper import *
 from utils.read_config import initialize_config, get_variable
 from utils.google_quick_answer import scrape_google_for_quick_answer
@@ -28,19 +29,18 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 handler.setFormatter(formatter)
 LOGGER.addHandler(handler)
 
-CONF = initialize_config('conf/config.ini')
+config_file_path = os.path.join(CONF_DIR, 'config.ini')
+
+CONF = initialize_config(config_file_path)
 PLACES_API_KEY = get_variable(conf = CONF, config_variable = 'PLACES_API_KEY',
                                 variable_type = 'str', config_section = 'google_places')
 
 GEOLOCATOR = Nominatim(user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36')
 
-BASE_DIR = os.getcwd()
 
-CSV_DIR = os.path.join(BASE_DIR, 'CSVs')
 if not os.path.exists(CSV_DIR):
     os.mkdir(CSV_DIR)
 
-EXCEL_DIR = os.path.join(BASE_DIR, 'Excels')
 if not os.path.exists(EXCEL_DIR):
     os.mkdir(EXCEL_DIR)
 
@@ -109,7 +109,9 @@ class College(object):
 
             formatted_address = data.get('candidates')[0].get('formatted_address')
 
-            self.address = address
+            self.address = formatted_address
+
+            LOGGER.debug('Google Places API found address: {0}'.format(formatted_address))
 
         elif data['status'] == 'OVER_QUERY_LIMIT':
 
@@ -120,6 +122,8 @@ class College(object):
             if google_scrape_result is not None:
 
                 self.address = google_scrape_result
+
+                LOGGER.debug('Google quick answer scrape found address: {0}'.format(self.address))
 
         else:
 
@@ -133,7 +137,7 @@ class College(object):
         Finds lat,lon pair from address by using geopy Nominatim
         '''
 
-        LOGGER.info('Searching for lat, lon pair on {0}'.format(self.college_name))
+        LOGGER.info('Searching for lat, lon pair on {0} using geolocator'.format(self.college_name))
 
 
         try:
@@ -144,11 +148,13 @@ class College(object):
             self.lat = lat
             self.lon = lon
 
-            LOGGER.debug('GEOLOCATOR found lat, lon pair for {0}'.format(self.college_name))
+            LOGGER.debug('geolocator found lat, lon pair: ({0}, {1})'.format(self.lat, self.lon))
 
         except Exception as e:
 
-            LOGGER.debug('GEOLOCATOR did not find lat, lon pair for {0}'.format(self.college_name))
+            LOGGER.debug('geolocator did not find lat, lon pair because of an error:')
+            LOGGER.debug(e)
+            LOGGER.info('Trying to get lat, lon pair by scraping google quick answer')
 
             lat_lon_quick_scrape = scrape_google_for_quick_answer("{0}, {1}, {2} latitude and longitude".format(self.college_name, self.college_location, self.state))
 
@@ -159,7 +165,7 @@ class College(object):
                 self.lat = float(lat_lon_possible_list[0])
                 self.lon = float(lat_lon_possible_list[1])
 
-                LOGGER.debug('Google quick scrape found lat, lon pair of {0}, {1}'.format(self.lat, self.lon))
+                LOGGER.debug('Google quick answer scrape found lat, lon pair of {0}, {1}'.format(self.lat, self.lon))
 
             else:
 
@@ -197,6 +203,8 @@ class College(object):
 
         main(university_apartments_url, fname)
 
+        LOGGER.info('CSV saved to /CSVs')
+
         apartment_frame = get_frame(fname)
 
         app_classes = []
@@ -222,10 +230,6 @@ class College(object):
 
             app_class_frame = pd.concat([app_class_frame, new_row], axis=0, ignore_index=True)
 
-
-
-
-
         os.chdir(EXCEL_DIR)
         state_dir = os.path.join(EXCEL_DIR, self.state)
         if not os.path.exists(state_dir):
@@ -235,10 +239,13 @@ class College(object):
         writer = pd.ExcelWriter(fname.replace('.csv', '.xlsx'))
         app_class_frame.to_excel(writer, 'Apartments')
         writer.save()
+        LOGGER.info('Excel saved to /Excels/{0}'.format(self.state))
 
-        os.chdir(BASE_DIR)
+        os.chdir(ROOT_DIR)
 
         self.apartment_classes = app_classes
+
+        LOGGER.info('Apartment scrape finished for {0}'.format(self.college_name))
 
         return app_classes
 
@@ -346,11 +353,9 @@ class Apartment(object):
                 miles_away = None
 
         except Exception as e:
-            LOGGER.error('Lat, Lon: {0}, {1} are incorrect... try calling find_lat_lon() on {2} College Class'.format(self.college.lat, self.college.lon, self.college.college_name))
-            print(e)
+            LOGGER.error('Error finding distance from college for apartment {0} with lat lon pair ({1}, {2}) and address {3}'.format(self.apartment_name, self.lat, self.lon, self.address))
+            LOGGER.error(e)
             miles_away = None
-
-        print(miles_away)
 
         self.dist_from_college = miles_away
 

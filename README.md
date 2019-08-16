@@ -71,3 +71,10 @@ Optional (just press enter if not answering) Inputs:
 
 This will save a CSV file to the CSVs folder along with an excel file to the
 respective state abbreviation folder in the /Excels folder.
+
+
+Sort all excel files into one with sheet names of 'College Name (state abbreviation)':
+
+```bash
+python sort_excels.py
+```
